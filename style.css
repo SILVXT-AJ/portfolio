@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'CustomFont';
+    src: url(fonts/coolvetica\ rg.otf) format('opentype');
+}
+body, html {
+    font-family: 'CustomFont', sans-serif;
+    height: 100%;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.aside {
+    position: fixed;             
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 300px;
+    background-color: #000000ee;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+}
+
+
+.logo {
+    width: 100px;
+    background-image: url('images/logo.png');
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.aside h2 {
+    margin: 10px 0;
+    font-weight: 50;
+    color: #27f1ffe5;
+    font-size: 2.0em;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.aside h2:hover {
+    color: #39ffffd0;
+    text-shadow: hsla(189, 100%, 60%, 0.863) 0px 0px 22px;
+    transition: color 0.3s, text-shadow 0.3s;
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: scale 0.3s ease-in-out;
+}
+
+
+.socials {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.socials a {
+    margin: 0 15px;
+    color: #27f1ffe5;
+    text-decoration: none;
+    font-size: 30px;
+    background-color: transparent;
+}
+
+.socials a:hover {
+    color: #00ccff;
+    text-shadow: hsla(197, 100%, 71%, 0.863) 0px 0px 22px;
+    transition: color 0.3s, text-shadow 0.3s;
+    transform: scale(1.2);
+    transition: scale 0.5s ease-in;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column ;
+    margin-top: 50px;
+    padding: 0 5px;
+    width: 100%;
+}
+
+.navbar a {
+    color: #27f1ffe5;
+    text-decoration: none;
+    display: flex;
+    font-size: 1.1em;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    padding: 10px 15px;
+}
+
+.navbar i {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.navbar a:hover {
+    background: hsla(197, 100%, 42%, 0.384);
+    border-radius: 12px;
+    font-size: 1.4em;
+    text-shadow: hsl(192, 100%, 34%) 0px 0px 22px;
+    transition: font-size 0.3s, background-color 0.3s;
+}
+
+.main {
+    flex: 1;
+    background-image: url('images/silvxt\ aj!!\ wall.png');
+    background-size: cover;
+    background-position: center;
+    color: red;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    padding: 20px;
+}
+.main::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* dark overlay */
+  z-index: 1;
+}
+.overlay {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+}
+
+
+.main h1 {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.main p {
+    font-size: 2.2em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.section {
+  height: 100vh; /* full screen */
+  padding: 60px 30px;
+  color: white;
+  background: #002c3dec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+}
+
+#home {
+      background: url("images/silvxt aj!! wall.png") center/cover no-repeat;
+      position: relative;
+}
+#home::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+}
+#home .content {
+      position: relative;
+      z-index: 2;
+}
+#home h1 {
+      font-size: 3em;
+      text-align: center;
+      color: #27f1ffe5;
+      margin-bottom: 10px;
+}
+#home p {
+      font-size: 2.2em;
+      text-align: center;
+      color: #ffffff;
+      margin-bottom: 10px;
+}
+.main h1, .main p {
+    position: relative;
+    text-align: center;
+    margin-left: 300px;
+    z-index: 2;
+}
+.main h1 {
+    color: #27f1ffe5;
+}
+.main p {
+    color: #ffffff;
+}
+.section:nth-child(odd) {
+    background-color: #001b4698;
+}
+
+.about-section {
+
+  color: white;
+  padding: 80px 30px;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.about-img {
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+}
+
+.about-text {
+  flex: 1;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.about-text h2 {
+  font-size: 2.5em;
+  color: #27f1ffe5;
+}
