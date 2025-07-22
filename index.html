@@ -11,10 +11,15 @@
 </head>
 <body>
 
+  <!-- Hamburger menu for mobile -->
   <div class="container">
-    
+      <div class="menu-toggle" onclick="toggleSidebar()">
+      <i class="fas fa-bars"></i>
+      </div>
+  
     <!-- Sidebar -->
-    <aside class="aside">
+    <aside class="aside" id="sidebar">
+      <span class="close-btn" onclick="toggleSidebar()">&times;</span>
       <img src="images/spdp.png" class="logo" />
       <h2>Silvest AJ</h2>
 
@@ -24,6 +29,12 @@
         <a href="https://discord.com/users/720951711270830100" target="_blank"><i class="fa-brands fa-discord"></i></a>
         <a href="https://open.spotify.com/user/31wa4i2wo2j6qdkfhmjog72virci?si=7755979bbab04b78" target="_blank"><i class="fa-brands fa-spotify"></i></a>
       </div>
+      <script>
+  function toggleSidebar() {
+    document.getElementById("sidebar").classList.toggle("open");
+  }
+</script>
+
 
       <nav class="navbar">
         <a href="#home"><i class="fa-solid fa-house"></i> Home</a>
