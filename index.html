@@ -54,19 +54,27 @@
     </main>
 
   </div>
-
+  <video autoplay muted loop id="bg-video">
+  <source src="video/abtbg.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+  </video>
   <!-- Scrollable Sections -->
   <section id="about" class="section about-section">
-  <div class="about-content">
-    <img src="images/spdp.png" alt="My Photo" class="about-img" />
+    
+  
     <div class="about-text">
-      <h2>About Me</h2>
+      <h2 id="aboutme">About Me</h2>
+      
+    </div>
+    <div class="about-content">
+    <img src="images/spdp.png" id="img" alt="My Photo" class="about-img" />
+    </div>
+    <div class="about-para">
       <p>
         Hi! I'm Silvest AJ, a passionate web developer exploring the world of full-stack development.
         I love building responsive and interactive websites using modern technologies like HTML, CSS, JavaScript, and more.
         I'm currently learning backend development and building real-world projects to sharpen my skills.
       </p>
-    </div>
     </div>
 </section>
 
@@ -74,7 +82,7 @@
   <section id="projects" class="section">
     <div>
       <h2>Projects</h2>
-      <p>Here you'll find some of the cool things I’ve built.</p>
+      <p>Here you'll find some of the cool things I've built.</p>
     </div>
   </section>
 
